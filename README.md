@@ -1,16 +1,23 @@
-## Hi there 👋
+## Make-An-Agent: A Generalizable Policy Network Generator with Behavior-Prompted Diffusion
 
-<!--
-**Make-An-Agent/Make-An-Agent** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This repository is the PyTorch implementation of **Make-An-Agent**, which is a conditional diffusion-based policy generator.
 
-Here are some ideas to get you started:
+## Code Usage
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Training the autoencoder:
+~~~
+cd encoder
+python train.py
+~~~
+
+Training behavior embeddings:
+~~~
+cd embedding
+python train.py
+~~~
+
+Training diffusion generator:
+~~~
+cd PolicyGenerator
+python train.py
+~~~
